@@ -69,7 +69,7 @@ ul {
     list-style: none;
     display: flex;
     gap: 1rem;
-    font-size: 24px;
+    font-size: 4px;
 }
 
 a {
@@ -116,7 +116,7 @@ footer{
 
 .perfil {
     display: flex;
-    background-color: var(--green);
+    background-color: var(--puple-disabled);
     padding: 20px;
     border-radius: 16px;
     align-items: center;
