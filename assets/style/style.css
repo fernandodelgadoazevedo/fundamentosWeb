@@ -126,7 +126,7 @@ footer{
 .foto {
     width: 200px;
     border-radius: 8px;
-
+}
 .video {
     width: 65vw;
     /* forçar a proporção do video, sempre largura/altura */
@@ -136,6 +136,7 @@ footer{
     display: block;
     border-radius: 8px;
     margin-top: 2rem;
+    text-align: center;
 }
 /* ! Configurações do contato */
 .contato {
