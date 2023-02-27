@@ -9,8 +9,16 @@
     <link rel="stylesheet" href="./assets/style/style.css">
 
 </head>
-<body>
-    <nav>
+<style>
+    @media screen and (max-width: 600px) {
+      .video {
+        width: 90vw;
+        aspect-ratio: 4/3;
+      }
+    }
+  </style>
+<body class="box-degrade">
+        <nav>
     <ul>
         <li><a href="./index.html">Home</a></li>
         <li><a href="./contato.html">Contato</a></li>
@@ -25,7 +33,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam delectus neque id, omnis facilis, incidunt aspernatur illo nobis nisi esse hic ratione doloremque pariatur! Facere voluptatum repudiandae impedit similique exercitationem!</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, magni, veritatis qui dolorum cupiditate placeat tempora voluptates odit nam voluptatum ad nulla quibusdam fuga, obcaecati est quia. Nisi, vitae dolor.
             </div>
-            <img src="./assets/img/logo.jpeg" alt="Foto de Perfil">
+            <img class="foto"src="./assets/img/logo.jpeg" alt="Foto de Perfil">
         </div>
         </section>
         <hr>
@@ -40,5 +48,6 @@
         <footer>
             <p>Azevedo 2023 &copy;</p> 
         </footer>
+        <script src="./assets/js/script.js"></script>
 </body>
 </html>

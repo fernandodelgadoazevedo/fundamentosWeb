@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<htm lang="pt-br">
+<html lang="pt-br">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css' >
     <title>Contato</title>
     <link rel="stylesheet" href="./assets/style/style.css">
 </head>
@@ -16,23 +16,23 @@
         </ul>    
     </nav>
     <hr>
+    <div>
     <main class="contato">
         <section class="formulario">
             <h3>Contato</h3>
-
             <form>
                 <div class="campos-form">
                     <label for="nome">Nome: </label>
-                    <input type=text id=nome>
+                    <input onkeyup=meuNome() type="text" id="nome" placeholder="Digite nome completo">
+                    <div id="txtNome"></div>
                 </div>
                 <div class="campos-form">
                     <label for="email">E-mail: </label>
-                    <input type=email id=email>
+                    <input type="email" id="email" placeholder="Digite seu E-mail">
                 </div>
-                
                 <div class="campos-form">
                     <label for="assunto">Assunto: </label>
-                    <textarea type=checkbox id=assunto cols="30" roms="5"></textarea>
+                    <textarea type=checkbox id=assunto cols="30" rows="5" placeholder="Digite seu texto"></textarea>
                 </div>
                 <button type="submit">Enviar</button>
             </form>
@@ -41,23 +41,18 @@
             <div class="endereco">
                 <h3>Endereço: </h3>
                 <spam>Rua Zé Delivery, 1632 </spam>
-                <span>Pinheiros - São Paulo / SP</span>
+                <spam>Pinheiros - São Paulo / SP</spam>
             </div>
-            <dir class="mapa">
+            <div class="mapa">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.4095027882654!2d-46.695095484978346!3d-23.55373176719584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57ab17ef3a4b%3A0x5cc82dde1bafb83d!2zWsOpIERlbGl2ZXJ5IC0gRXNjcml0w7NyaW8gZG8gWsOp!5e0!3m2!1spt-BR!2sbr!4v1676918429047!5m2!1spt-BR!2sbr"
-                    width="600" height="450"
-                    style="border:0;
-                    "allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </dir>
+                    width:="400" height="250"
+                    style=border:0px loading=lazy referrerpolicy=no-referrer-when-downgrade></iframe>
+            </div>
         </section>
     </main>
-
-
-
         <footer> 
         <p>Azevedo - 2023 &copy;</p> 
         </footer>
+        <script src="./assets/js/script.js"></script>
 </body>
-</htm>
+</html>

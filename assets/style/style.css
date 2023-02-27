@@ -21,8 +21,19 @@
     box-sizing: border-box;
 }
 
-body {
-    background: var(--background);
+.box-degrade {
+    
+    background: linear-gradient(to left, #2E242C, #211A22);
+    background-size: 500% 100%;
+    animation: degrade-animado 5s infinite alternate ;
+}
+@keyframes degrade-animado{
+    0%{
+    background-position-x: 0%;
+    }
+    100%{
+    background-position-x: 100%;
+    }
 }
 
 p {
@@ -116,7 +127,7 @@ footer{
 
 .perfil {
     display: flex;
-    background-color: var(--puple-disabled);
+    background-color: var(--dark-purple);
     padding: 20px;
     border-radius: 16px;
     align-items: center;
@@ -162,7 +173,7 @@ footer{
     width: 100%;
 }
 label {
-    font-family: 'ABeeZee', sans-serif;
+    font-family: 'Josefin sans', sans-serif;
     margin-left: 1rem;
 }
 input, textarea, button {
@@ -197,8 +208,6 @@ button:hover {
 .campos-form {
     margin-bottom: 1rem;
 }
-
-
     /* ! Configurações de responsividade */
     /* quando a tela tiver uma largura máxima de até 1000px, usar essas regras,  */
     /* se a tela for maior do que isso, toda essa parte do código é ignorada */
@@ -212,6 +221,3 @@ button:hover {
     }
 }
   /* caso tenha alguma dúvida em algo que não foi comentado nesse código, chama no discord, e fala qual parte foi, que eu explico. */
-
-
-
