@@ -6,11 +6,11 @@
 /* ! Obrigatoriamente as variaveis precisam começar o nome com 0 -- */
 
 :root{
-    --background: #fafce0;
-    --purple: #4a314d;
-    --dark-purple: #1a090d;
---puple-disabled: #6b6570;
---green: #c6d55c;
+    --background: #010f3b;
+    --purple: #1d0029;
+    --dark-purple: #2e302e;
+    --puple-disabled: #291807;
+    --white: #afb6b3;
 }
 /********************************
 /* remove todo o padding e margem que o navegador possa colocar em algum elemento da tela */
@@ -23,7 +23,7 @@
 
 .box-degrade {
     
-    background: linear-gradient(to left, #2E242C, #211A22);
+    background: linear-gradient(to left, #4d494c, #211A22);
     background-size: 500% 100%;
     animation: degrade-animado 5s infinite alternate ;
 }
@@ -43,8 +43,8 @@ p {
 
 h1, h2, h3, h4, a, nav, p {
 font-family: Josefin Sans, cursive;
-    color: var(--purple);
-    letter-spacing: 3px;
+    color: var(--white);
+    letter-spacing: 4px;
 }
 
 h1,h2,h3,h4 {
@@ -113,7 +113,7 @@ main{
 
 footer{
     padding: 2rem 0;
-    border-top: 2px solid var(--purple);
+    border-top: 2px solid var(--dark-purple);
     margin-top: 2rem;
     display: flex;
     justify-content: center;
@@ -138,6 +138,7 @@ footer{
     width: 200px;
     border-radius: 8px;
 }
+
 .video {
     width: 65vw;
     /* forçar a proporção do video, sempre largura/altura */
@@ -158,11 +159,11 @@ footer{
 
 .endereco {
     font-family: 'Josefin sans', sans-serif;
-    font-size: 1.25rem;
-    color: var(--dark-purple);
+    font-size: 1.25vw;
+    color: var(--white);
 }
 .mapa {
-    width: 35vw;
+    width: 24vw;
     aspect-ratio: 16/9;
     border-radius: 8px;
     /* código hexadecimal normalmente é feito com 6 digitos.. aqui tem 8, sendo que os ultimos 2, é pra colocar transparencia */
@@ -186,7 +187,7 @@ input, textarea, button {
 }
 
 input::placeholder, textarea::placeholder {
-    color: #c6d55c;
+    color: #8f8f8f;
     font-family: 'ABeeZee', sans-serif;
 }
 
